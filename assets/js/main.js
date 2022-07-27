@@ -30,7 +30,19 @@ console.log(titulo.innerText);
 titulo.innerText = "ideas para outfits";
 titulo.innerHTML = "<strong>agrego html</strong>";
 
-
 titulo.style.color = "red";
-titulo.style.display = "none";
 
+titulo.className= "container row"; // cambio de clase //
+titulo.setAttribute("class", "titulo1"); //cambio de atributo(valor a modificar, valor deseado//
+
+/* let link = document.querySelector("a");
+link.setAttribute("href", "https://www.google.com/");
+ */
+//crear HTML
+let subtitulo = document.createElement("h2");
+subtitulo.setAttribute("id", "nuevoElemento");
+subtitulo.innerHTML = "<a href=''>este es un link</a>"
+console.log(subtitulo);
+
+let a = document.querySelector('a')
+a.setAttribute('href', 'https://www.google.com.ar/')

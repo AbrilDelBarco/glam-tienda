@@ -34,7 +34,7 @@ button {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    border: 1px solid none ;
+    /* border: 1px solid none ; */
 }
 .blazer{
     width: 250px;
