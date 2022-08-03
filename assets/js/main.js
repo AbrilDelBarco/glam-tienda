@@ -49,20 +49,26 @@ for(const ingreso of ingresos){
     console.log(ingreso);
 
 }
+
 let producto = { id: 1, nombre: "chombaT", precio: 3500};
 let concatenando = "ID : " + producto.id + "- Producto" + producto.nombre + "$" + producto.precio; 
+let plantilla = `ID: ${producto.id} - Producto ${producto.nombre} $ ${producto.precio}`;
+
+console.log(concatenando);
+console.log(planilla);
   */
 class Producto{
     constructor(prenda, categoria, costo){
         this.prenda=prenda;
         this.categoria=categoria;
         this.costo = costo; 
+        this.img = img;
     }
 }
 let listaProductos = [
-    {prenda: "chomba", categoria:"indumentaria", costo:2000},
-    {prenda:"calza", categoria:"indumentaria", costo:1000},
-    {prenda:"buzo", categoria:"indumentaria", costo:2500},
+    {prenda: "chomba", categoria:"indumentaria", costo:10, img: 'assets/img/blazer_blanco.jpeg'},
+    {prenda: "calza", categoria: "indumentaria", costo:4, img:''},
+    {prenda: "buzo", categoria: "indumentaria", costo:2, img: ''}
 ];
 
 const agregarProductos = ()=>{
@@ -78,6 +84,25 @@ const agregarProductos = ()=>{
 listaProductos.forEach(el => {
     document.createElement("div");
 nodo.innerHTML = `<h3>${el.prenda}</h3>
-                <h2>${el.categoria}<h2>
-                `
-})
+                <h2>${el.costo}</h2>
+                <img src="${el.img}"></img>`
+}) 
+
+/* const productos = [
+    {id: 1, producto: "blazer", precio: 4},
+    {id:2, producto: "chomba", precio: 10},
+    {id:3, producto: "calza", precio:2},
+]
+
+const guardarLocal = (blazer, cuatro) => {localStorage.setItem(blazer, cuatro)};
+const guardarLocal = (chomba, diez) => {localStorage.setItem(chomba, diez)};
+const guardarLocal = (calza, dos) => {localStorage.setItem(calza, dos)};
+
+let carrito = []
+let carritoEnLS = JSON.stringify(localStorage.getItem(`carrito`))
+
+if (carritoEnLS){
+    carrito = carritoEnLS
+}
+renderCarrito(carrito)
+ */

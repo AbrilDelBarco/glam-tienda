@@ -13,13 +13,24 @@
         <button id="checkout" class="button-checkout"onclick="pay()" >pagar</button>
       </div>
             <div class="page-content">
-          <div class="product-container">
+             <div class="product-container">
+                <div class="productos">
+                    <div class="producto" id="blazer">
+                    <form action="">
+                        <h3>Blazer GNERAL</h3>
+                        <img class="blazer" src="./assets/img/blazer_blanco.jpeg"/>
+                        <input type="text" name="" id="nombre">
+                        <input type="text" name="" id="categoria">
+                        <input type="number" id="precio"/>
+                    </form>
+                </div>
+                </div>
+              </div>
+              <div class="product-container">
                 <form action="">
                     <h3>Blazer blanco</h3>
+                    <h2 id="costo">$6000</h2>
                     <img class="blazer" src="./assets/img/blazer_blanco.jpeg"/>
-                    <input type="text" name="" id="nombre">
-                    <input type="text" name="" id="categoria">
-                    <input type="number" id="precio"/>
                     <button class="button-add" onclick="add('blazer.PNG', 4500)">Agregar al carrito</button>
             </form>
               </div>
@@ -30,7 +41,6 @@
                         <h2 id="costo">$3000</h2>
                         <button class="button-add"onclick="add('blazer.PNG', 3000)" >Agregar al carrito</button>        
                 </div>
-      
                     <div class="page-content">
                         <div class="product-container">
                             <h3>Blazer marron</h3>
@@ -48,7 +58,7 @@
                  
                             </div>
       </div>
-      <div></div>
+      <div id="costo"></div>
       <footer>
         <a href="https://www.google.com.ar/">Google</a>
     </footer>
